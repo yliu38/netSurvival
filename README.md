@@ -188,5 +188,5 @@ python output_id_table.py # output node ids for following feature selection proc
 python ran_walk.py
 ```
 ## Feature Selection
-### please run DB_random_walk_results.R, change input and output based on your real situations
+Please run DB_random_walk_results.R, change input and output based on your real situations.
 
