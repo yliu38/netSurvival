@@ -2,8 +2,8 @@
 
 ## Table of Contents
 - **[Introduction](#introduction)**
+- **[Preparations](#preparations)**
 - **[Preprocessing](#preprocessing)**
-- **[Normalizations](#normalizations)**
 - **[Data Split and Normalizations](#data-split-and-normalizations)**
 - **[Univariate log-rank test](#univariate-log-rank-test)**
 - **[One-dimensional Hierarchical Clustering](#one-dimensional-hierarchical-clustering)**
