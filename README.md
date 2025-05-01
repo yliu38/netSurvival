@@ -115,7 +115,7 @@ If you have sample replicates or paired-samples, you may want to select patients
 **R code:**
 ``` r
 ## add blank columns (NA values) using mutate and across
-## clinical_sub is a patient clinical data including case_overall_survival_mo, censoring and samplenames
+## clinical_sub is a patient clinical data including case_overall_survival_mo, censoring and samplename
 pt_train <- clinical_sub[clinical_sub$sample_full %in% train_ind,]
 ori_ncol <- ncol(pt_train)
 # reformat tables because of duplicated pid
@@ -123,7 +123,7 @@ pt_train <- pt_train %>%
   mutate(!!!setNames(rep(list(NA_real_), nrow(exp_train)), rownames(exp_train)))
 
 for (i in seq(nrow(pt_train))) {
-  tmp <- match(pt_train[i,"samplenames"],colnames(exp_train))
+  tmp <- match(pt_train[i,"samplename"],colnames(exp_train))
   pt_train[i,(ori_ncol+1):ncol(pt_train)] <- exp_train[,tmp]
 }
 
