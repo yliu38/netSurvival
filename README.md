@@ -12,7 +12,7 @@
 
 
 ## Introduction
-EGNF is an innovative tool for biomarker discovery, designed to tackle complex diseases like cancer. Powered by graph neural networks (GNNs) and advanced network-based feature engineering, EGNF uncovers predictive molecular signatures from high-dimensional gene expression data. By integrating gene expression, clinical attributes, and dynamic graph representations, it delivers exceptional classification accuracy and interpretability. Beyond biomedicine, EGNF’s flexible framework can potentially classify any high-dimensional dataset. Scalable, robust, and user-friendly, EGNF empowers researchers and clinicians to advance precision medicine and beyond. Dive into the code, documentation, and examples to get started!
+netSurvival is a novel computational framework that integrates network-based feature selection with survival analysis to identify robust biomarkers from high-dimensional genomic data. Developed specifically to address the challenges of prognostic modeling in cancer genomics, netSurvival leverages the power of gene-gene interaction networks and random walk algorithms to discover biologically meaningful markers associated with patient outcomes.
 
 ## Preparations
 ### R packages installation
@@ -51,9 +51,6 @@ Open the neo4j software --> click "new" --> Create project --> Add Local DBMS, i
 
 
 ## Preprocessing
-The recommended input is either raw count expression matrix or normalized expression matrix like TPM. Since the network computation normally need much larger resources, we recommend to start with matrix with **around 1000 features**. 
-Some initial feature selections like **differentially expressed genes (DEGs)** selection are needed.
-
 <img src="https://github.com/yliu38/EGNF/blob/main/image/example_expression_matrix.png" width="380">
 
 **R code:**
@@ -71,7 +68,7 @@ library(purrr)
 library(reticulate)
 
 
-source("https://github.com/yliu38/EGNF/blob/main/R/functions.R")
+source("https://github.com/yliu38/netSurvival/blob/main/R/functions.R")
 # remove genes with 80% zeroes and na rows
 exp <- remove_sparse_rows(exp)
 # log2 and z-score normalization
