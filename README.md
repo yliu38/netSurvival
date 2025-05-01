@@ -5,7 +5,7 @@
 - **[Preparations](#preparations)**
 - **[Preprocessing](#preprocessing)**
 - **[Data Split and Normalizations](#data-split-and-normalizations)**
-- **[Univariate log-rank test](#univariate-log-rank-test)**
+- **[Univariate Log-rank Test](#univariate-log-rank-test)**
 - **[One-dimensional Hierarchical Clustering](#one-dimensional-hierarchical-clustering)**
 - **[Neo4j Graph Network Building and Graph Algorithm Implementation](#neo4j-graph-network-building-and-graph-algorithm-implementation)**
 - **[Feature Selection](#feature-selection)**
@@ -111,7 +111,7 @@ exp_test <- norm_dat(exp_test, nor="two.end")
 ```
 If you have sample replicates or paired-samples, you may want to select patients for data split to avoid potential data leakage.
 
-## Univariate log-rank test
+## Univariate Log-rank Test
 **R code:**
 ``` r
 ## add blank columns (NA values) using mutate and across
