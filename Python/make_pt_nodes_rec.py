@@ -1,6 +1,3 @@
-# -------------------------------------------------------------------------------------------------------------------#
-# This python script will read the grouped cnv file and construct cql query for populating Neo4j database
-# -------------------------------------------------------------------------------------------------------------------#
 # Import relevant libraries
 from py2neo import Graph
 
