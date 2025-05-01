@@ -21,7 +21,7 @@ netSurvival is a novel computational framework that integrates network-based fea
 ``` r
 # List of required packages
 packages <- c(
-  "dendextend", "tidyverse", "tibble", "gsubfn", 
+  "dendextend", "tidyverse", "tibble", "gsubfn", "venn",
   "readxl", "data.tree", "survival", "purrr", "reticulate")
 
 # Install missing packages
