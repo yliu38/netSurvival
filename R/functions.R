@@ -25,7 +25,7 @@ norm_dat <- function(df, nor) {
 
 
 # making trees
-make_tree <- function(dat, directory, group_label) {
+make_tree <- function(dat, directory) {
   no_of_genes <- dim(dat)[1]
   gene_names <- rownames(dat)
   
@@ -97,17 +97,12 @@ make_tree <- function(dat, directory, group_label) {
     df <- df[order(abs(as.numeric(df[,3])), decreasing = T),]
     nevent <- round(nrow(df) * 0.1)
     df$include <- c(rep("Y",nevent),rep("N",nrow(df)-nevent)) 
-    df$group <- group_label
     # Provide column names
     colnames(df) <- c('event_no', 'samples', 'median_exp', 'no_of_samples', 'gene_name', 'event_name', 'leaf_status',"dendrogram_height",
-                      "levels", "include", "group")
+                      "levels", "include")
     
     file_name = paste(directory, gene_name, ".csv", sep="")
     write.table(df, file=file_name, sep=",",row.names = F)
   }
-}
-
-
-  return(p_fre_sub)
 }
 
