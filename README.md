@@ -71,7 +71,6 @@ library(reticulate)
 source("https://github.com/yliu38/netSurvival/blob/main/R/functions.R")
 # remove genes with 80% zeroes and na rows
 exp <- remove_sparse_rows(exp)
-# log2 and z-score normalization
 ```
 
 ## Data Split and Normalizations
@@ -105,6 +104,7 @@ train_ind <- cv_folds[[5]]$train
 exp_train <- exp[, train_ind]
 exp_test <- exp[, !colnames(exp) %in% train_ind]
 
+# log2 and z-score normalization
 # nor has options including "two.end", "up", "down" for choosing both high and low or high only or low only expressed clusters
 exp_train <- norm_dat(exp_train, nor="two.end")
 exp_test <- norm_dat(exp_test, nor="two.end")
