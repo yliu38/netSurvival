@@ -14,6 +14,10 @@
 ## Introduction
 netSurvival is a novel computational framework that integrates network-based feature selection with survival analysis to identify robust biomarkers from high-dimensional genomic data. Developed specifically to address the challenges of prognostic modeling in cancer genomics, netSurvival leverages the power of gene-gene interaction networks and random walk algorithms to discover biologically meaningful markers associated with patient outcomes.
 
+<p align="center">
+<img src="https://github.com/yliu38/netSurvival/trajectory.png" width="550">
+</p>
+
 ## Preparations
 ### R packages installation
 
