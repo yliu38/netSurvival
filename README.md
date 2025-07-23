@@ -1,5 +1,19 @@
 # netSurvival
 
+If you use this tool in your work, please cite [https://doi.org/10.1101/2025.07.17.665414](https://doi.org/10.1101/2025.07.17.665414)
+```bibtex
+@article{liunetSurvival2025,
+  title     = {A Network-Based Discovery of Prognostic Markers in Recurrent IDH wild-type Gliomas},
+  author    = {Liu, Yang and Huse, Jason T. and Kannan, Kasthuri},
+  year      = {2025},
+  journal   = {bioRxiv},
+  publisher = {Cold Spring Harbor Laboratory},
+  doi       = {10.1101/2025.07.17.665414},
+  url       = {https://doi.org/10.1101/2025.07.17.665414},
+  note      = {Preprint}
+}
+```
+
 ## Table of Contents
 - **[Introduction](#introduction)**
 - **[Preparations](#preparations)**
